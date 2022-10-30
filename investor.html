@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Fundvice - Investor</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Gp - v2.1.0
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+  @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+.material-form {
+  padding: 15px;
+  background-color: #fff;
+}
+.material-form .input-block {
+  background-color: #fff;
+  border-bottom: solid 1px #c8c8c8;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  position: relative;
+  margin-bottom: 20px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.material-form .input-block::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 0%;
+  bottom: 0;
+  height: 2px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: #2196f3;
+}
+.material-form .input-block.focus {
+  border-color: #fff;
+}
+.material-form .input-block.focus label {
+  color: #2196f3;
+  top: 0;
+  font-size: 13px;
+}
+.material-form .input-block.focus::before {
+  left: 0%;
+  width: 100%;
+}
+.material-form .input-block.has-value {
+  background-color: #fff;
+}
+.material-form .input-block.has-value label {
+  top: 0;
+  font-size: 13px;
+}
+.material-form .input-block.error {
+  border-color: #fff;
+}
+.material-form .input-block.error::before {
+  left: 0%;
+  width: 100%;
+  background-color: #d50000;
+}
+.material-form .input-block.textarea {
+  height: auto;
+}
+.material-form .input-block.textarea .form-control {
+  height: auto;
+  resize: none;
+  padding-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.material-form .input-block.floating-field {
+  padding: 2px 0 0;
+  height: 62px;
+}
+.material-form .input-block.floating-field.textarea {
+  height: auto;
+}
+.material-form .input-block label {
+  position: absolute;
+  left: 0;
+  top: 29px;
+  width: 100%;
+  height: 20px;
+  margin: 0;
+  font-weight: 500;
+  z-index: 1;
+  color: #939393;
+  font-size: 13px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  line-height: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.material-form .input-block .form-control {
+  background-color: transparent;
+  padding: 4px 0 0;
+  border: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3c3c3c;
+}
+.material-form .input-block .form-control:focus {
+  outline: none;
+}
+.material-form .input-block .form-control:focus label {
+  top: 0;
+}
+.material-form .error-label {
+  color: #d50000;
+  margin-top: -15px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.material-form .form-note {
+  font-size: 13px;
+  color: #939393;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+.material-form .square-button {
+  background-color: #ac1e22;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 0;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.material-form .square-button:hover, .material-form .square-button:focus {
+  background-color: #0a4c82;
+}
+
+/*dropdown list as ul li method*/
+.select-block {
+  background-color: #fff;
+  width: 100%;
+  padding: 12px 0 0;
+  position: relative;
+  margin-bottom: 20px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.select-block label {
+  position: absolute;
+  left: 0;
+  top: 32px;
+  height: 20px;
+  width: 100%;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  margin: 0;
+  font-weight: 500;
+  z-index: 1;
+  color: #939393;
+  font-size: 12px;
+  line-height: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.select-block .active-list {
+  width: 100%;
+  height: 52px;
+  padding: 0;
+  color: #c9c9c9;
+  position: relative;
+  z-index: 2;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.select-block .active-list:after {
+  content: "▼";
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  top: 50%;
+  width: 20px;
+  padding-left: 5px;
+  text-align: left;
+  height: 52px;
+  line-height: 52px;
+  color: #939393;
+  font-size: 14px;
+  margin-top: -26px;
+}
+.select-block.added label {
+  top: 0;
+  font-size: 13px;
+}
+.select-block.added .active-list {
+  color: #3c3c3c;
+  font-size: 12px;
+}
+.select-block.added.focus label {
+  top: 0;
+}
+.select-block.focus label {
+  top: 0;
+  font-size: 13px;
+  color: #2196f3;
+}
+.select-block.focus .active-list {
+  font-size: 12px;
+}
+.select-block.focus .custom-select {
+  border-color: #fff;
+}
+.select-block.focus .active-list:after {
+  content: "▲";
+  color: #3c3c3c;
+}
+.select-block.focus .custom-select::before {
+  left: 0%;
+  width: 100%;
+}
+.select-block .custom-select {
+  border-bottom: solid 1px #c8c8c8;
+  display: inline-block;
+  height: 52px;
+  position: relative;
+  padding: 0;
+  width: 100%;
+  line-height: 52px;
+}
+.select-block .custom-select::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 0%;
+  bottom: 0;
+  height: 2px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: #2196f3;
+}
+.select-block .custom-select .list-field {
+  width: 100%;
+  height: 52px;
+  padding: 0 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.select-block .custom-select .drop-down-list {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  overflow-x: auto;
+  z-index: 99;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  margin-top: 2px;
+  left: 0;
+  background-color: white;
+  display: none;
+  -moz-box-shadow: rgba(0, 0, 0, 0.11765) 0px 1px 6px, rgba(0, 0, 0, 0.11765) 0px 1px 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.11765) 0px 1px 6px, rgba(0, 0, 0, 0.11765) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.11765) 0px 1px 6px, rgba(0, 0, 0, 0.11765) 0px 1px 4px;
+}
+.select-block .custom-select .drop-down-list li {
+  padding: 10.5px 15px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: normal;
+  background-color: #fafafa;
+  background-color: #fff;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.select-block .custom-select .drop-down-list li input[type="checkbox"] {
+  margin: 0;
+  margin-right: 8px;
+  position: relative;
+  top: 1px;
+}
+.select-block .custom-select .drop-down-list li label {
+  font-weight: normal;
+  cursor: pointer;
+  display: block;
+}
+.select-block .custom-select .drop-down-list li:hover {
+  color: #3c3c3c;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.select-block .custom-select .drop-down-list .add-new {
+  border-top: solid 1px #c8c8c8;
+  padding: 15px;
+  color: #3c3c3c;
+}
+.select-block .custom-select .drop-down-list .add-new i {
+  font-size: 16px;
+  margin-top: 3px;
+  color: #939393;
+}
+
+@media (min-width: 768px) {
+  .contact-wrap {
+    width: 600px;
+    margin: auto;
+  }
+
+  .material-form .input-block label {
+    font-size: 18px;
+    line-height: 14px;
+  }
+  .material-form .input-block .form-control {
+    font-size: 18px;
+  }
+
+  .select-block label {
+    font-size: 18px;
+    line-height: 14px;
+  }
+  .select-block.added .active-list {
+    font-size: 18px;
+  }
+  .select-block.focus .active-list {
+    font-size: 18px;
+  }
+  .select-block .custom-select .drop-down-list li {
+    font-size: 15px;
+  }
+
+  .material-form {
+    padding: 30px;
+  }
+}
+/*----page styles---*/
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+
+.contact-wrap {
+  padding: 15px;
+}
+
+h1 {
+  color: #fff;
+  padding: 40px 0 0;
+  margin: 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+h1 small {
+  font-size: 18px;
+  display: block;
+  text-transform: none;
+  font-weight: 300;
+  margin-top: 10px;
+  color: #ff1631;
+}
+
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+.made-with-love i {
+  font-style: normal;
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.made-with-love a:hover {
+  text-decoration: underline;
+}
+.head{
+margin: 0px 0px 0px 25px;
+}</style>
+</head>
+
+<body>
+
+  <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+           
+		
+<section class="contact-wrap"> 
+ <form action="form1.php" method="post" class="material-form">
+  <br><h4>CONTACT FORM FOR INVESTOR</h4>
+    <div class="input-block floating-field">
+      <label>Name</label>
+      <input name="name" value="" type="text" class="form-control" required>
+    </div>
+    <div class="input-block floating-field error">
+      <label>Contact Number</label>
+      <input name="number" class="form-control">
+    </div>
+	<div class="input-block floating-field error">
+      <label>Email ID</label>
+      <input name="email" type="text" class="form-control" required>
+    </div>
+  <div class="select-block">
+      <label>Sector for investment</label>
+      <div class="custom-select">
+        <div  class="active-list">Type of Investor</div>
+        <input name="sector" type="text" class="list-field" required>
+        <ul class="drop-down-list">
+          <li>Aerospace & Defence</li>
+          <li>Agribusiness</li>
+          <li>Airlines & Transportation</li>
+          <li>Automotive & Mobility</li>
+          <li>Chemicals</li>
+          <li>Consumer Products</li>
+          <li>Energy & Natural Resources</li>
+          <li>Financial Services</li>
+          <li>Forest Products, Paper & Packaging</li>
+          <li>Healthcare</li>
+          <li>Infrastructure & Construction</li>
+          <li>Machinery & Equipment</li>
+          <li>Media & Entertainment</li>
+          <li>Metals & Mining</li>
+          <li>Oil & Gas</li>
+          <li>Real Estate</li>
+          <li>Retail</li>
+          <li>Social & Public Sector</li>
+          <li>Technology</li>
+          <li>Telecommunications</li>
+          <li>Utilities & Renewebles</li>
+        </ul>
+      </div>
+    </div>
+	<div class="input-block floating-field error">
+      <label>Ticket size</label>
+      <input name="ticket" type="text" class="form-control" required>
+    </div>
+ 
+    
+    <div class="select-block">
+      <label>Type of Investor</label>
+      <div class="custom-select">
+        <div  class="active-list">Type of Investor</div>
+        <input name="investor" type="text" class="list-field" required>
+        <ul class="drop-down-list">
+          <li>Angel investor</li>
+          <li>Venture capitalist</li>
+        </ul>
+      </div>
+    </div>
+      
+	
+
+	
+    <button name="submit" class="btn square-button material-btn">Send</button>
+  </form>
+  <br>
+   <h3 class="head"><font color="#000"><b>Fundvice Weekly</b></font></h3><br>
+<h4 class="head"><font color="#000">A Newsletter by Fundvice</font></h4><br>
+
+<h6 class="head"><font color="#000">Funding | Finance | Markets | Investment | Business | Startups</font></h6><br>
+ <form class="news" action="https://fundvice.us10.list-manage.com/subscribe/post?u=e527ad401963a7a929c6b686f&amp;id=875d57a37c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="example@example.com" />
+    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+  </form>
+  
+</section>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+             <div class="section-title">
+          <h2><font  style="font-family:Cambria, 'MyCambria', serif;">Fundvice</font></h2>
+          <p><font size="5" style="font-family:Cambria, 'MyCambria', serif;">CONTACT US - INVESTOR</font></p>
+          <p><font size="5" color="#0a4c82" style="font-family:Cambria, 'MyCambria', serif;">BENEFITS OF COLLABORATING WITH US</font></p>
+        </div>
+            <font style="font-family:Cambria, 'MyCambria', serif;"><p class="font-italic" style="text-align:justify">
+              One of the perks of collaborating with us is the access to all the funding mandates on the platform where we can take care of any or all of your operational aspects such as the ones mentioned below.</font>
+          <div class="section-title">
+          <p><font size="4" color="#ac1e22" style="font-family:Cambria, 'MyCambria', serif;">•  Exit Strategy Analysis & assistance in multi-exit options</font></p>
+          <p><font size="4" color="#ac1e22" style="font-family:Cambria, 'MyCambria', serif;">•  Helping out in Secondary Sales of investments</font></p>
+          <p><font size="4" color="#ac1e22" style="font-family:Cambria, 'MyCambria', serif;">•  Market Analysis help for new investors</font></p>
+          <p><font size="4" color="#ac1e22" style="font-family:Cambria, 'MyCambria', serif;">•  Pre-investment</font></p>
+                    </div><p><font size="3" style="font-family:Cambria, 'MyCambria', serif;">The team will assess the sustainability of each company, along with the documentation of any material findings in our investment papers.</font></p>
+          <div class="section-title"><p><font size="4" color="#ac1e22" style="font-family:Cambria, 'MyCambria', serif;">•  Due Diligence Process</font></p></div>
+          <p><font size="3"  style="font-family:Cambria, 'MyCambria', serif;">Each deal team will typically work with a range of parties including the Fundvice's Operations, Legal and Compliance teams.</font></p>
+          <div class="section-title"><p><font size="4" color="#ac1e22" style="font-family:Cambria, 'MyCambria', serif;">•  Monitoring and Partnering</font></p></div>
+          <p style="text-align:justify"><font size="3"  style="font-family:Cambria, 'MyCambria', serif;">We monitor and partner with portfolio companies immediately after the acquisition of a portfolio company; the private equity teams work to ensure it operates from a strong sustainable platform to help maximise the success of the investment. </font></p>
+          <div class="section-title"><p><font size="4" color="#ac1e22" style="font-family:Cambria, 'MyCambria', serif;">•  Transparency and Reporting</font></p></div>
+          <p><font size="3"  style="font-family:Cambria, 'MyCambria', serif;">Quarterly reporting is facilitated. </font></p>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    
+
+     <div class="container">
+      <div class="copyright">
+       Copyright Fundvice. All Rights Reserved
+      </div>
+      <div class="credits">
+         Designed & Developed at <a href="http://facebook.com/thefreelancernetworks/" target="_blank"><font color="#35a2ff">The Freelancer Network</font>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script>
+  //Important Note
+
+//This pen Copyrighted (c) 2016 by Nikhil Krishnan (https://codepen.io/nikhil8krishnan/pen/ALLLkv). If you have any query please let me know at nikhil8krishnan@gmail.com.
+
+            
+
+//material contact form animation
+var floatingField = $('.material-form .floating-field').find('.form-control');
+var formItem = $('.material-form .input-block').find('.form-control');
+
+//##case 1 for default style
+//on focus
+formItem.focus(function() {
+  $(this).parent('.input-block').addClass('focus');
+});
+//removing focusing
+formItem.blur(function() {
+  $(this).parent('.input-block').removeClass('focus');
+});
+
+//##case 2 for floating style
+//initiating field
+floatingField.each(function() {
+  var targetItem = $(this).parent();
+  if ($(this).val()) {
+    $(targetItem).addClass('has-value');
+  }
+});
+
+//on typing
+floatingField.blur(function() {
+  $(this).parent('.input-block').removeClass('focus');
+  //if value is not exists
+  if ($(this).val().length == 0) {
+    $(this).parent('.input-block').removeClass('has-value');
+  }else{
+      $(this).parent('.input-block').addClass('has-value');
+  }
+});
+
+//dropdown list
+$('body').click(function() {
+  if ($('.custom-select .drop-down-list').is(':visible')) {
+    $('.custom-select').parent().removeClass('focus');
+  }
+  $('.custom-select .drop-down-list:visible').slideUp();
+});
+$('.custom-select .active-list').click(function() {
+  $(this).parent().parent().addClass('focus');
+  $(this).parent().find('.drop-down-list').stop(true, true).delay(10).slideToggle(300);
+});
+$('.custom-select .drop-down-list li').click(function() {
+  var listParent = $(this).parent().parent();
+  //listParent.find('.active-list').trigger("click");
+  listParent.parent('.select-block').removeClass('focus').addClass('added');
+  listParent.find('.active-list').text($(this).text());
+  listParent.find('input.list-field').attr('value', $(this).text());
+});</script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>FundVice</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+<style>
+.img:hover{
+transform: scale(1.1);}
+
+#process{
+	 background: url(assets/img/13_Process_Desktop.png);
+	 background-size: 100% 100%;
+	 height: 100vh;
+	 width: 100%;
+}
+@media screen and (max-width: 768px) {
+#process{
+ background: url(13.jpg);
+	 background-size: 100% 100%;
+	 height: 100vh;
+	 width: 100%;
+}
+}
+
+#partner{
+	 background: url(assets/img/16_PTBG.png);
+	 background-size: 100% 100%;
+	 width: 100%;
+}
+@media screen and (max-width: 768px) {
+#partner{
+ background: url(assets/img/16_PTBGMobile.png);
+	 background-size: 100% 100%;
+
+	 width: 100%;
+}
+}
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+.material-form {
+  padding: 15px;
+  background-color: #fff;
+}
+.material-form .input-block {
+  background-color: #fff;
+  border-bottom: solid 1px #c8c8c8;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  position: relative;
+  margin-bottom: 20px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.material-form .input-block::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 0%;
+  bottom: 0;
+  height: 2px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: #2196f3;
+}
+.material-form .input-block.focus {
+  border-color: #fff;
+}
+.material-form .input-block.focus label {
+  color: #2196f3;
+  top: 0;
+  font-size: 13px;
+}
+.material-form .input-block.focus::before {
+  left: 0%;
+  width: 100%;
+}
+.material-form .input-block.has-value {
+  background-color: #fff;
+}
+.material-form .input-block.has-value label {
+  top: 0;
+  font-size: 13px;
+}
+.material-form .input-block.error {
+  border-color: #fff;
+}
+.material-form .input-block.error::before {
+  left: 0%;
+  width: 100%;
+  background-color: #d50000;
+}
+.material-form .input-block.textarea {
+  height: auto;
+}
+.material-form .input-block.textarea .form-control {
+  height: auto;
+  resize: none;
+  padding-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.material-form .input-block.floating-field {
+  padding: 2px 0 0;
+  height: 62px;
+}
+.material-form .input-block.floating-field.textarea {
+  height: auto;
+}
+.material-form .input-block label {
+  position: absolute;
+  left: 0;
+  top: 29px;
+  width: 100%;
+  height: 20px;
+  margin: 0;
+  font-weight: 500;
+  z-index: 1;
+  color: #939393;
+  font-size: 13px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  line-height: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.material-form .input-block .form-control {
+  background-color: transparent;
+  padding: 4px 0 0;
+  border: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3c3c3c;
+}
+.material-form .input-block .form-control:focus {
+  outline: none;
+}
+.material-form .input-block .form-control:focus label {
+  top: 0;
+}
+.material-form .error-label {
+  color: #d50000;
+  margin-top: -15px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.material-form .form-note {
+  font-size: 13px;
+  color: #939393;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+.material-form .square-button {
+  background-color: #ac1e22;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 0;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.material-form .square-button:hover, .material-form .square-button:focus {
+  background-color: #0a4c82;
+}
+
+/*dropdown list as ul li method*/
+.select-block {
+  background-color: #fff;
+  width: 100%;
+  padding: 12px 0 0;
+  position: relative;
+  margin-bottom: 20px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.select-block label {
+  position: absolute;
+  left: 0;
+  top: 32px;
+  height: 20px;
+  width: 100%;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  margin: 0;
+  font-weight: 500;
+  z-index: 1;
+  color: #939393;
+  font-size: 12px;
+  line-height: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.select-block .active-list {
+  width: 100%;
+  height: 52px;
+  padding: 0;
+  color: #c9c9c9;
+  position: relative;
+  z-index: 2;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.select-block .active-list:after {
+  content: "▼";
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  top: 50%;
+  width: 20px;
+  padding-left: 5px;
+  text-align: left;
+  height: 52px;
+  line-height: 52px;
+  color: #939393;
+  font-size: 14px;
+  margin-top: -26px;
+}
+.select-block.added label {
+  top: 0;
+  font-size: 13px;
+}
+.select-block.added .active-list {
+  color: #3c3c3c;
+  font-size: 12px;
+}
+.select-block.added.focus label {
+  top: 0;
+}
+.select-block.focus label {
+  top: 0;
+  font-size: 13px;
+  color: #2196f3;
+}
+.select-block.focus .active-list {
+  font-size: 12px;
+}
+.select-block.focus .custom-select {
+  border-color: #fff;
+}
+.select-block.focus .active-list:after {
+  content: "▲";
+  color: #3c3c3c;
+}
+.select-block.focus .custom-select::before {
+  left: 0%;
+  width: 100%;
+}
+.select-block .custom-select {
+  border-bottom: solid 1px #c8c8c8;
+  display: inline-block;
+  height: 52px;
+  position: relative;
+  padding: 0;
+  width: 100%;
+  line-height: 52px;
+}
+.select-block .custom-select::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 0%;
+  bottom: 0;
+  height: 2px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: #2196f3;
+}
+.select-block .custom-select .list-field {
+  width: 100%;
+  height: 52px;
+  padding: 0 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.select-block .custom-select .drop-down-list {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  overflow-x: auto;
+  z-index: 99;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  margin-top: 2px;
+  left: 0;
+  background-color: white;
+  display: none;
+  -moz-box-shadow: rgba(0, 0, 0, 0.11765) 0px 1px 6px, rgba(0, 0, 0, 0.11765) 0px 1px 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.11765) 0px 1px 6px, rgba(0, 0, 0, 0.11765) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.11765) 0px 1px 6px, rgba(0, 0, 0, 0.11765) 0px 1px 4px;
+}
+.select-block .custom-select .drop-down-list li {
+  padding: 10.5px 15px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: normal;
+  background-color: #fafafa;
+  background-color: #fff;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.select-block .custom-select .drop-down-list li input[type="checkbox"] {
+  margin: 0;
+  margin-right: 8px;
+  position: relative;
+  top: 1px;
+}
+.select-block .custom-select .drop-down-list li label {
+  font-weight: normal;
+  cursor: pointer;
+  display: block;
+}
+.select-block .custom-select .drop-down-list li:hover {
+  color: #3c3c3c;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.select-block .custom-select .drop-down-list .add-new {
+  border-top: solid 1px #c8c8c8;
+  padding: 15px;
+  color: #3c3c3c;
+}
+.select-block .custom-select .drop-down-list .add-new i {
+  font-size: 16px;
+  margin-top: 3px;
+  color: #939393;
+}
+
+@media (min-width: 768px) {
+  .contact-wrap {
+    width: 600px;
+    margin: auto;
+  }
+
+  .material-form .input-block label {
+    font-size: 18px;
+    line-height: 14px;
+  }
+  .material-form .input-block .form-control {
+    font-size: 18px;
+  }
+
+  .select-block label {
+    font-size: 18px;
+    line-height: 14px;
+  }
+  .select-block.added .active-list {
+    font-size: 18px;
+  }
+  .select-block.focus .active-list {
+    font-size: 18px;
+  }
+  .select-block .custom-select .drop-down-list li {
+    font-size: 15px;
+  }
+
+  .material-form {
+    padding: 30px;
+  }
+}
+/*----page styles---*/
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+
+.contact-wrap {
+  padding: 15px;
+}
+
+h1 {
+  color: #fff;
+  padding: 40px 0 0;
+  margin: 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+h1 small {
+  font-size: 18px;
+  display: block;
+  text-transform: none;
+  font-weight: 300;
+  margin-top: 10px;
+  color: #ff1631;
+}
+
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+.made-with-love i {
+  font-style: normal;
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.made-with-love a:hover {
+  text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+.cta {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("blog.jpg") fixed center center;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.cta h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.cta p {
+  color: #fff;
+}
+
+.cta .cta-btn {
+  font-family:  Cambria, 'MyCambria', serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 4px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.cta .cta-btn:hover {
+  background: #ac1e22;
+  border-color: #ac1e22;
+  color: #fff;
+}
+
+#hero .icon-box1 {
+  padding: 10px 5px;
+  transition: ease-in-out 0.3s;
+  border: 1px solid #ffffff;
+  height: 100%;
+  text-align: center;
+}
+
+#hero .icon-box1 i {
+  font-size: 32px;
+  line-height: 1;
+  color: #ffffff;
+   font-family: Cambria, 'MyCambria', serif;
+}
+
+#hero .icon-box1 h3 {
+	color: #ffffff;
+  font-weight: 700;
+  margin: 0px 0 0 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 20px;
+  line-height: 26px;
+   font-family: Cambria, 'MyCambria', serif;
+}
+
+#hero .icon-box1 h3 a {
+  color: #ffffff;
+  transition: ease-in-out 0.3s;
+   font-family: Cambria, 'MyCambria', serif;
+}
+
+#hero .icon-box1 h3 a:hover {
+  color: #35a2ff;
+}
+#hero .icon-box1 h3:hover {
+  color: #35a2ff;
+}
+#hero .icon-box1:hover {
+  border-color: #35a2ff;
+}
+
+
+
+.subscribe{
+	width: 150px;
+	background-color: #ac171b;
+	color: #fff;
+	border : 5px solid #ac171b;
+}
+.subscribe:hover{
+	background-color: #0b4c82;
+	border : 5px solid #0b4c82;
+}
+.in{
+	margin: 0px 0px 0px 25px;
+}
+</style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+     
+     <a href="#hero" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+		  <li class="drop-down"><a href="">Articles &nbsp <i class="fa fa-sort-desc" style="font-size:15px;color:#ac1e22"></i></a>
+            <ul>
+              <li><a href="https://fundviceblog.blogspot.com/" target="_blank">Blogs</a></li>
+              <li><a href="#newsletter">Newsletter</a></li>
+            </ul>
+          </li>
+          <li><a href="#director">Directors</a></li>
+          <li><a href="#advisor">Advisors</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#partner">Partners</a></li>
+          <li><a href="#contact">Contact us</a></li>
+          
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      </div>
+	
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1><font style="font-family:Cambria, 'MyCambria', serif;">FUNDVICE</font></h1>
+          <h2><font style="font-family:Cambria, 'MyCambria', serif;">Funding advice simplified</font></h2>
+        </div>
+      </div>
+	  <div class="row mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        
+        
+        <div class="col-xl-2 col-md-4 col-6 mt-4 mt-md-0">
+          <a href="startup.html" target="_blank"><div class="icon-box">
+            <h3><font style="font-family:Cambria, 'MyCambria', serif;">Are you a Startup ?</font></h3>
+          </div></a>
+        </div>
+        <div class="col-xl-2 col-md-4 col-6 mt-4 mt-xl-0">
+    <a href="investor.html" target="_blank"><div class="icon-box">
+            <h3><font style="font-family:Cambria, 'MyCambria', serif;">Are you an Investor ?</font></h3>
+          </div></a>
+        </div>
+      </div>
+
+<br><br>
+      <div class="row mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-xl-2 col-md-4 col-6">
+         <a href="https://www.linkedin.com/company/fundvice" target="_blank"><div class="icon-box">
+           <img src="assets/img/1_Linkedin.png" width="40px" height="40px">
+            <h3><font style="font-family:Cambria, 'MyCambria', serif;">Linkedin</font></h3>
+          </div></a>
+        </div>
+        <div class="col-xl-2 col-md-4 col-6 ">
+           <a href="https://www.facebook.com/fundingadvice" target="_blank"><div class="icon-box">
+          <img src="assets/img/2_Facebook.png" width="40px" height="40px">
+            <h3><font style="font-family:Cambria, 'MyCambria', serif;">Facebook</font></h3>
+          </div></a>
+        </div>
+        <div class="col-xl-2 col-md-4 col-6 mt-4 mt-md-0">
+          <a href="mailto:corporate@fundvice.in" target="_blank"><div class="icon-box">
+          <img src="assets/img/4_Mail.png" width="40px" height="40px">
+            <h3><font style="font-family:Cambria, 'MyCambria', serif;">Mail</font></h3>
+          </div></a>
+        </div>
+        <div class="col-xl-2 col-md-4 col-6 mt-4 mt-xl-0">
+    <a href="Fundvice_Brochure.pdf" download target="_blank"><div class="icon-box">
+            <img src="assets/img/3_Download.png" width="40px" height="40px">
+            <h3><font style="font-family:Cambria, 'MyCambria', serif;">Brochure</font></h3>
+          </div></a>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            		<br><br><br>
+		<img src="assets/img/aboutus.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3><font style="font-family:Cambria, 'MyCambria', serif;">About Us</font></h3>
+            <font style="font-family:Cambria, 'MyCambria', serif;"><p class="font-italic" style="text-align:justify">
+              Simply put,<br>We build the world’s finest financial product for founders who are fledgling <b>entrepreneurs.</b> Hey! If you’re new to the entrepreneurial neighbourhood but with great ideas, we are here to help you settle right in. We’re perfectly aware of the stumbling blocks in your obstacle course en route to your dream company… and we’re here to sort out just that. After all, we too were “you” once upon a time. So take a few deep breaths, make yourself comfortable, approach us. <br>
+			  <br>It’s a bird! It’s a plane!... It’s <strike>Superman</strike> Investment. Let’s not kid each other. <b>FUNDVICE</b> perfectly understands that success usually needs time and investment. Thus, we’re a proponent of ‘patient capital’, making conscious long-term investments to help companies reach their full potential and generate fuller returns (Well… this is what you wanted, isn’t it?) <br>
+			  <br>We seek <b>opportunities</b> where we share the confidence of the starstruck entrepreneur, and in the starry ideas the entrepreneur brings in. Perhaps an immensely satisfying virtue in our trade is in the beginning of true <b>partnerships</b> with the founders and management teams of our partnered companies… just to ensure that we can have maximum impact on their paths to success (Yes. We never truly go away). This involvement isn’t limited to just capital provision, it evolves further beyond. We work closely with partnered companies on their business models, implement scale through further partnerships and share our experiences in developing world-class brands.</p></div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="owl-carousel clients-carousel">
+		<img src="assets/img/1.jpg">
+		<img src="assets/img/2.jpg">
+		<img src="assets/img/3.jpg">
+		
+          
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2><font style="font-family:Cambria, 'MyCambria', serif;">Fundvice</font></h2>
+          <p><font style="font-family:Cambria, 'MyCambria', serif;">Our Services</font></p>
+        </div>
+
+        <div class="row">
+        <div class="col-lg-3 col-md-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/11.png" width="100px" height="100px"></div>
+              <br><h4><a href=""><font style="font-family:Cambria, 'MyCambria', serif;">Private Equity</font></a></h4>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-8 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/22.png" width="100px" height="100px"></div>
+              <br><h4><a href=""><font style="font-family:Cambria, 'MyCambria', serif;">Valuation & Financial Modeling</font></a></h4>
+             
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-8 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/33.png" width="100px" height="100px"></div>
+              <br><h4><a href=""><font style="font-family:Cambria, 'MyCambria', serif;">Legal and Compliance</font></a></h4>
+            </div>
+          </div>
+		  <div class="col-lg-3 col-md-8 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/44.png" width="100px" height="100px"></div>
+              <br><h4><a href=""><font style="font-family:Cambria, 'MyCambria', serif;">Debt Syndication</font></a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/55.png" width="100px" height="100px"></div>
+              <br><h4><a href=""><font style="font-family:Cambria, 'MyCambria', serif;">Premium Consulting & Transaction Advisory</font></a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/66.png" width="100px" height="100px"></div>
+              <br><h4><a href=""><font style="font-family:Cambria, 'MyCambria', serif;">Leasing & Financing</font></a></h4>
+              
+            </div>
+          </div>
+		  
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/77.png" width="100px" height="100px"></div>
+              <br><h4><a href=""><font style="font-family:Cambria, 'MyCambria', serif;">Distressed Deals</font></a></h4>
+              
+            </div>
+          </div>
+		  
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+   <section id="blogs" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Fundvice Blogs</h3>
+          <p>Keep yourself updated by following our blogs consisting of insightful articles and useful updates</p>
+          <a class="cta-btn" href="https://fundviceblog.blogspot.com/" target="_blank">Click Here</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+<!-- ======= Team Section ======= -->
+    <section id="director" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2><font style="font-family:Cambria, 'MyCambria', serif;">Fundvice</font></h2>
+          <p><font style="font-family:Cambria, 'MyCambria', serif;">Directors</font></p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/111.png" class="img-fluid" alt="">
+                <div class="social">
+                 <p class="team11"><font size="2" style="font-family:Cambria, 'MyCambria', serif;"> Heena brings about a decade of valuable field experience in diverse streams such as Equity Research, Credit Analyst, Branding and strategy. In addition to this, she is also the founder of a recruitment firm, “Staffing Experts”.</font></p>
+                
+                </div>
+              </div>
+              <div class="member-info">
+                <h4><font color="#0b4c82" style="font-family:Cambria, 'MyCambria', serif;">Heena Arora</font>&nbsp &nbsp &nbsp &nbsp &nbsp <a href="https://www.linkedin.com/in/heena-arora-fundvice/" target="_blank"><img align="right" src="assets/img/1_Linkedin.png" width="20px" height="20px"></a></h4>
+                <h6><font color="#515151" style="font-family:Cambria, 'MyCambria', serif;">Founder | Managing Director</font></h6>
+                <span><font color="#7b7b7b" style="font-family:Cambria, 'MyCambria', serif;">Investment Banker and ICAI Professional</font></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="assets/img/444.png" class="img-fluid" alt="">
+                <div class="social">
+                  <p class="team11"><font size="2" style="font-family:Cambria, 'MyCambria', serif;">Ritin is a veteran of Tax and Legal compliance with his 8 years of practical experience in the domain. He is celebrated for his analytical skills and strategies. His adventures didn’t just stop there, he is also the
+founder of “5 Quest’s Consulting”</font></p>
+                
+                </div>
+              </div>
+              <div class="member-info">
+                <h4><font color="#0b4c82" style="font-family:Cambria, 'MyCambria', serif;">Ritin Agarwal </font>&nbsp &nbsp &nbsp &nbsp &nbsp <a href="https://www.linkedin.com/in/ritin-agarwal" target="_blank"><img align="right" src="assets/img/1_Linkedin.png" width="20px" height="20px"></a></h4>
+                <h6><font color="#515151" style="font-family:Cambria, 'MyCambria', serif;">Director - Compliance</font></h6>
+                <span><font color="#7b7b7b" style="font-family:Cambria, 'MyCambria', serif;">Semi-qualified ICAI Professional and a Serial Entrepreneur</font></span>
+              
+			  
+			  
+			  </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/333.png" class="img-fluid" alt="">
+                <div class="social">
+                  <p class="team11"><font size="2" style="font-family:Cambria, 'MyCambria', serif;">With his vast experience in the finance industry, Nitin has to his credit of raising 15 crores of debt for EV, singlehandedly. He specializes in Energy and Electric Vehicle sectors.</font></p>
+                
+                </div>
+              </div>
+              <div class="member-info">
+				<h4><font color="#0b4c82" style="font-family:Cambria, 'MyCambria', serif;">Nitin Garg </font>&nbsp &nbsp &nbsp &nbsp &nbsp <a href="https://www.linkedin.com/in/nitin-garg-425a7086" target="_blank"><img align="right" src="assets/img/1_Linkedin.png" width="20px" height="20px"></a></h4>
+                <h6><font color="#515151" style="font-family:Cambria, 'MyCambria', serif;">Director - Equity Analysis</font></h6>
+                <span><font color="#7b7b7b" style="font-family:Cambria, 'MyCambria', serif;">MBA Finance - IBS Hyderabad, Equity Valuer</font></span>
+              
+				
+				
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/222.png" class="img-fluid" alt="">
+                <div class="social">
+                 <p class="team11"><font size="2" style="font-family:Cambria, 'MyCambria', serif;">Javed’s mastery in the entrepreneurial domain is immense. His strategic advisories and mentoring startups of various domains are truly invaluable. He co-founded “Nereby Grocers” and is also associated with “Ah!Ventures”</font></p>
+                </div>
+              </div>
+              <div class="member-info">
+                 <h4><font color="#0b4c82" style="font-family:Cambria, 'MyCambria', serif;">M. Javed Quaraishi </font>&nbsp &nbsp &nbsp &nbsp &nbsp <a href="https://www.linkedin.com/in/mohammadjavedq" target="_blank"><img align="right" src="assets/img/1_Linkedin.png" width="20px" height="20px"></a></h4>
+                <h6><font color="#515151" style="font-family:Cambria, 'MyCambria', serif;">Vice President</font></h6>
+                <span><font color="#7b7b7b" style="font-family:Cambria, 'MyCambria', serif;">Seasoned Professional and Funding Expert</font></span>
+              
+			  
+			  
+			  </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+<div class="advisor-title">
+          <h2><font style="font-family:Cambria, 'MyCambria', serif;">Fundvice</font></h2>
+          <p><font style="font-family:Cambria, 'MyCambria', serif;">Board of Advisors</font></p>
+        </div>
+    <section id="advisor" class="testimonials">
+	
+      <div class="container" data-aos="zoom-in">
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <img src="assets/img/1111.png" class="testimonial-img" alt="" >
+            <h3><font style="font-family:Cambria, 'MyCambria', serif;">Mr. Sanjay Nagi</font></h3>
+			<h3><font color="#00a8ff" style="font-family:Cambria, 'MyCambria', serif;">B.E., IIT Roorkee – 1983</font></h3>
+			<p><font size="5" style="font-family:Cambria, 'MyCambria', serif;">Serial Entrepreneur and Angel Investor</font></p>
+            <p>
+              <i class=""></i>
+              <font color="#d9d9d9" style="font-family:Cambria, 'MyCambria', serif;">Mr. Nagi runs Tomorrows Market Innovators Pvt. Ltd. (TMIPL), a leading Decision Support Consultancy firm in the Industry. TMIPL helps global clients to enter the Indian market and aid in the Indian corporates’ growth. TMIPL is a 17-year old company employing 38 full-time employees in offices across India. TMIPL dominates the Aviation Consulting Industry in India. It has to its credit the record of bringing in over 75 firms into India. TMIPL is the advisor to TATAs, GMR, GVK, Godrej, Mahindra, etc.</font><i class=""></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/2222.png" class="testimonial-img" alt="">
+            <h3><font style="font-family:Cambria, 'MyCambria', serif;">Mr. Chandan Ghosh</font></h3>
+            <h3><font color="#00a8ff" style="font-family:Cambria, 'MyCambria', serif;">Electrical Engineer, Bombay University; PGDM, XLRI Jamshedpur</font></h3>
+			<p><font size="5" style="font-family:Cambria, 'MyCambria', serif;">Serial Entrepreneur and Angel Investor</font></p><p>
+              <i class=""></i>
+              <font color="#d9d9d9" style="font-family:Cambria, 'MyCambria', serif;">Mr. Ghosh is a serial entrepreneur since 2012 and is the Key Man of ‘Group Manana’. He engages himself with several companies and is a visionary, story teller, believer and evangelist! He achieved the target of $1 Million from absolute zero in less than 12 months. His aspirations continue to have his company publicly listed for a tune of 1000 crores within 18 months; $1 billion by the December of 2020. His dedication to mentoring, Grooming and Transforming Companies and Individuals is beyond compare. Mr. Ghosh is also a Visiting Professor and a Guest Speaker to many notable Academic Institutes and International Trade Events.</font><i class=""></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/3333.png" class="testimonial-img" alt="">
+            <h3><font style="font-family:Cambria, 'MyCambria', serif;">CA Ravindra Kumar Agarwal</font></h3>
+            <h3><font color="#00a8ff" style="font-family:Cambria, 'MyCambria', serif;">Chartered Accountant</font></h3>
+            <p>
+              <i class=""></i><font color="#d9d9d9" style="font-family:Cambria, 'MyCambria', serif;">
+              Mr. Agarwal’s Chartered Accountancy spans across 3 decades of handling audits and consultation to various industries, in cost efficiency, taxation strategies, budget planning and so on. His special interests and extensive experiences are in the Management of Sugar Industries, first hand.</font><i class=""></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/4444.png" class="testimonial-img" alt="">
+            <h3><font style="font-family:Cambria, 'MyCambria', serif;">Dr. Prabhjeet Singh Narula</font></h3>
+            <h3><font color="#00a8ff" style="font-family:Cambria, 'MyCambria', serif;">Psychologist</font></h3>
+            <p>
+              <i class=""></i><font color="#d9d9d9" style="font-family:Cambria, 'MyCambria', serif;">
+             Dr. Narula holds stellar track record in the mental health sector. As a practising Psychologist, Dr. Narula is adept at various Psychometric tests, Psycho Therapies and Counselling methods. Dr. Narula possesses a strong professional education topped up with a Doctorate – A PhD focused in Psychology from Yesbud University.</font><i class=""></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/5555.png" class="testimonial-img" alt="">
+            <h3><font style="font-family:Cambria, 'MyCambria', serif;">Adv. Aasheesh Gupta</font></h3>
+            <h3><font color="#00a8ff" style="font-family:Cambria, 'MyCambria', serif;">B.E.(Civil), MBA (Finance), LLB</font></h3>
+			<p><font size="5" style="font-family:Cambria, 'MyCambria', serif;">High Court Attorney</font></p>
+            <p>
+              <i class=""></i><font color="#d9d9d9" style="font-family:Cambria, 'MyCambria', serif;">
+			  He has over 12 years of experience in the field of Infrastructure, Real Estate, Banking & Finance, Project Finance, Corporate Law, Commercial Contacts and Insolvency matters.
+              </font></p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+<!-- ======= Features Section ======= -->
+<br><br>
+<div class="advisor-title">
+          <h2><font style="font-family:Cambria, 'MyCambria', serif;">Fundvice</font></h2>
+          <p><font style="font-family:Cambria, 'MyCambria', serif;">HOW WE DO IT</font></p>
+        </div>
+    <section id="process" class="process">
+      <div class="container" data-aos="fade-up">
+
+        
+      </div>
+    </section><!-- End Features Section -->
+<section id="portfolio" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2><font style="font-family:Cambria, 'MyCambria', serif;">Fundvice</font></h2>
+          <p><font style="font-family:Cambria, 'MyCambria', serif;">PORTFOLIO</font></p>
+          <p><font color="#ab1d22" style="font-family:Cambria, 'MyCambria', serif;">Equity</font></p>
+        </div>
+
+<div class="icons1">
+<div class="icon1">
+<p class="img" align="center"><img src="assets/img/001.png" width="125px" height="125px"></p>
+</div>
+<div class="icon1">
+<p class="img" align="center"><img src="assets/img/002.png" width="125px" height="125px"></p>
+</div>
+<div class="icon1">
+<p class="img" align="center"><img src="assets/img/003.png" width="125px" height="125px"></p>
+</div>
+<div class="icon1">
+<p class="img" align="center"><img src="assets/img/004.png" width="125px" height="125px"></p>
+</div>
+<div class="section-title">
+          <p><font color="#ab1d22" style="font-family:Cambria, 'MyCambria', serif;">Debt</font></p>
+		   <p><font size="5" color="#585858" style="font-family:Cambria, 'MyCambria', serif;">Leasing & Financing</font></p>
+		   <p><font size="4" color="#585858" style="font-family:Cambria, 'MyCambria', serif;">[136 Electric Vehicles for fleet management company]</font></p>
+		   <p><font size="5" color="#585858" style="font-family:Cambria, 'MyCambria', serif;">Debt [MSME/Start up India/Grants]</font></p>
+        </div>
+
+
+</div>
+
+      </div>
+    </section><!-- End Services Section -->
+	<div class="advisor-title">
+          <h2><font style="font-family:Cambria, 'MyCambria', serif;">Fundvice</font></h2>
+          <p><font style="font-family:Cambria, 'MyCambria', serif;">STRATEGIC PARTNERS</font></p>
+        </div>
+     
+		<section id="partner" class="process">
+      <div class="container" data-aos="fade-up">
+<div class="icons1">
+<div class="icon1">
+<p class="img" align="center"><a href="https://www.marketinsightconsultants.com/" style="text-decoration:none" target="_blank"><img src="assets/img/partner/1.png" width="125px" height="125px"></a></p>
+</div>
+<div class="icon1">
+<p class="img" align="center"><a href="https://www.5qsconsulting.com/" style="text-decoration:none" target="_blank"><img src="assets/img/partner/2.png" width="125px" height="125px"></a></p>
+</div>
+<div class="icon1">
+<p class="img" align="center"><a href="" style="text-decoration:none" target="_blank"><img src="assets/img/partner/3.png" width="125px" height="125px"></a></p>
+</div>
+<div class="icon1">
+<p class="img" align="center"><a href="https://www.professionalutilities.com/" style="text-decoration:none" target="_blank"><img src="assets/img/partner/4.png" width="125px" height="125px"></a></p>
+</div></div>
+<br>
+<div class="icons1">
+<div class="icon1">
+<p class="img" align="center"><a href="https://www.kgconsors.com/home" style="text-decoration:none" target="_blank"><img src="assets/img/partner/5.png" width="125px" height="125px"></a></p>
+</div>
+<div class="icon1">
+<p class="img" align="center"><a href="https://mananainnovations.com/#" style="text-decoration:none" target="_blank"><img src="assets/img/partner/6.png" width="125px" height="125px"></a></p>
+</div>
+<div class="icon1">
+<p class="img" align="center"><a href="https://psysigns.in" style="text-decoration:none" target="_blank"><img src="assets/img/partner/7.png" width="125px" height="125px"></a></p>
+</div>
+<div class="icon1">
+<p class="img" align="center"><a href="https://www.tfnofficial.com" style="text-decoration:none" target="_blank"><img src="assets/img/partner/8.png" width="125px" height="125px"></a></p>
+</div></div>
+        
+      </div>
+    </section><!-- End Features Section -->
+
+     
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+
+        
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4"><br><br>
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>New Delhi, India</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p><a href="mailto:corporate@fundvice.in" style="text-decoration:none" target="_blank"><font color="#000">corporate@fundvice.in</font></a></p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p><a href="tel:+91-88260-29258" style="text-decoration:none" target="_blank"><font color="#000">+91-88260-29258</font></a></p>
+                <p><a href="tel:+91-78380-90083" style="text-decoration:none" target="_blank"><font color="#000">+91-78380-90083</font></a></p>
+                <p><a href="tel:+91-80775-05271" style="text-decoration:none" target="_blank"><font color="#000">+91-80775-05271</font></a></p>
+                </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+             <form action="form.php" method="post" class="material-form">
+  <div class="input-block floating-field error">
+      <label>Name</label>
+      <input name="name" type="text" class="form-control" required>
+    </div>
+	<div class="input-block floating-field error">
+      <label>Email ID</label>
+      <input name="email" type="text" class="form-control" required>
+    </div>
+	<div class="input-block floating-field error">
+      <label>Subject</label>
+      <input name="sub" type="text" class="form-control" required>
+    </div>
+	<div class="input-block floating-field error">
+      <label>Message</label>
+      <input name="mess" type="text" class="form-control" required>
+    </div>
+    <button name="submit" class="btn square-button material-btn">Send</button>
+  </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+<section id="newsletter">
+<h3 align="center"><font color="#000"><b>Fundvice Weekly</b></font></h3><br>
+<h4 align="center"><font color="#000">A Newsletter by Fundvice</font></h4><br>
+
+<h5 align="center"><font color="#000">Funding | Finance | Markets | Investment | Business | Startups</font></h5><br>
+ <form class="news" action="https://fundvice.us10.list-manage.com/subscribe/post?u=e527ad401963a7a929c6b686f&amp;id=875d57a37c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="example@example.com" />
+    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+  </form>
+</section>
+
+
+
+  </main>
+ 
+  
+  <footer id="footer">
+   
+    <div class="container">
+      <div class="copyright">
+       Copyright Fundvice. All Rights Reserved
+      </div>
+      <div class="credits">
+         Designed & Developed at <a href="http://facebook.com/thefreelancernetworks/" target="_blank"><font color="#35a2ff">The Freelancer Network</font>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+ <script>
+  //Important Note
+
+//This pen Copyrighted (c) 2016 by Nikhil Krishnan (https://codepen.io/nikhil8krishnan/pen/ALLLkv). If you have any query please let me know at nikhil8krishnan@gmail.com.
+
+            
+
+//material contact form animation
+var floatingField = $('.material-form .floating-field').find('.form-control');
+var formItem = $('.material-form .input-block').find('.form-control');
+
+//##case 1 for default style
+//on focus
+formItem.focus(function() {
+  $(this).parent('.input-block').addClass('focus');
+});
+//removing focusing
+formItem.blur(function() {
+  $(this).parent('.input-block').removeClass('focus');
+});
+
+//##case 2 for floating style
+//initiating field
+floatingField.each(function() {
+  var targetItem = $(this).parent();
+  if ($(this).val()) {
+    $(targetItem).addClass('has-value');
+  }
+});
+
+//on typing
+floatingField.blur(function() {
+  $(this).parent('.input-block').removeClass('focus');
+  //if value is not exists
+  if ($(this).val().length == 0) {
+    $(this).parent('.input-block').removeClass('has-value');
+  }else{
+      $(this).parent('.input-block').addClass('has-value');
+  }
+});
+
+//dropdown list
+$('body').click(function() {
+  if ($('.custom-select .drop-down-list').is(':visible')) {
+    $('.custom-select').parent().removeClass('focus');
+  }
+  $('.custom-select .drop-down-list:visible').slideUp();
+});
+$('.custom-select .active-list').click(function() {
+  $(this).parent().parent().addClass('focus');
+  $(this).parent().find('.drop-down-list').stop(true, true).delay(10).slideToggle(300);
+});
+$('.custom-select .drop-down-list li').click(function() {
+  var listParent = $(this).parent().parent();
+  //listParent.find('.active-list').trigger("click");
+  listParent.parent('.select-block').removeClass('focus').addClass('added');
+  listParent.find('.active-list').text($(this).text());
+  listParent.find('input.list-field').attr('value', $(this).text());
+});</script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
